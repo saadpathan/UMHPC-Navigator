@@ -1,0 +1,6 @@
+DICC Navigator is an application to extract and analyze 
+log file information containing records of job submissions, 
+allocations, completions, and terminations on a HPC system, 
+which is associated with SLURM management software in UMHPC. 
+It is developed under the course WIX1002 - Fundamentals of 
+Programming, as a semester assignment project.
