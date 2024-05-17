@@ -1,4 +1,10 @@
-package diccnavigator;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ass5;
+
+
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,22 +15,7 @@ import java.util.Date;
 
 public class TimeController {
 
-    public static void main(String[] args) {
-        // Example usage
-        String filename = "/DICC Navigator/resources/extracted_log.txt";
-        String startTimeStr = "2022-06-01T01:02:35.148"; // Start time in yyyy-MM-dd'T'HH:mm:ss format
-        String endTimeStr = "2022-06-01T09:16:23.309"; // End time in yyyy-MM-dd'T'HH:mm:ss format
-
-        // Call the method to get job counts within the time range
-        int jobsCreated = getJobCountInTimeRange(filename, startTimeStr, endTimeStr, "submit");
-        int jobsEnded = getJobCountInTimeRange(filename, startTimeStr, endTimeStr, "complete");
-
-        // Print the results
-        System.out.println("Number of jobs created within the specified time range: " + jobsCreated);
-        System.out.println("Number of jobs ended within the specified time range: " + jobsEnded);
-    }
-
-    public static int getJobCountInTimeRange(String filename, String startTimeStr, String endTimeStr, String eventType) {
+    public int getJobCountInTimeRange(String filename, String startTimeStr, String endTimeStr, String eventType) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         int jobCount = 0;
 
@@ -43,7 +34,7 @@ public class TimeController {
 
                 // Check if the timestamp falls within the specified time range and matches the event type
                 if (timestamp.after(startTime) && timestamp.before(endTime)) {
-                    if (eventType.equals(" Allocate") && line.contains("sched: Allocate")) {
+                    if (eventType.equals("submit") && line.contains("_slurm_rpc_submit_batch_job")) {
                         jobCount++;
                     } else if (eventType.equals("complete") && line.contains("_job_complete")) {
                         jobCount++;
@@ -57,3 +48,4 @@ public class TimeController {
         return jobCount;
     }
 }
+

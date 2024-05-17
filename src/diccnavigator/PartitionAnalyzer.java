@@ -1,14 +1,16 @@
-package diccnavigator;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ass5;
+
+
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
- *
- * @author Hp
- */
-abstract class PartitionAnalyzer {
+public abstract class PartitionAnalyzer {
 
     protected int jobCount = 0;
 
@@ -33,3 +35,4 @@ abstract class PartitionAnalyzer {
         return jobCount;
     }
 }
+

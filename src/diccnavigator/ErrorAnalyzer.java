@@ -1,4 +1,10 @@
-package diccnavigator;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ass5;
+
+
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,20 +15,17 @@ import java.util.Map;
 public class ErrorAnalyzer {
 
     private Map<String, Integer> userErrorCount;
-    private int totalErrors;
 
     public ErrorAnalyzer() {
         userErrorCount = new HashMap<>();
-        totalErrors = 0;
     }
 
     public void processLogFile(String filename) {
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                if (line.contains("error: This association")) {
+                if (line.contains("error:")) {
                     updateUserErrorCount(line);
-                    totalErrors++;
                 }
             }
         } catch (IOException e) {
@@ -41,11 +44,7 @@ public class ErrorAnalyzer {
             if (end != -1) {
                 String user = logEntry.substring(start, end);
                 userErrorCount.put(user, userErrorCount.getOrDefault(user, 0) + 1);
-            } else {
-                //System.out.println("End index not found for user in log entry: " + logEntry);
             }
-        } else {
-            //System.out.println("User prefix not found in log entry: " + logEntry);
         }
     }
 
@@ -53,8 +52,5 @@ public class ErrorAnalyzer {
         for (String user : userErrorCount.keySet()) {
             System.out.println("[user-" + user + ", error-occurred " + userErrorCount.get(user) + "]");
         }
-
-        System.out.println("\nTotal Jobs Causing Errors : " + totalErrors);
-        System.out.println("Total Users With Errors : " + userErrorCount.size());
     }
 }
