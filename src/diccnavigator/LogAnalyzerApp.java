@@ -61,38 +61,27 @@ public class LogAnalyzerApp extends Application {
     }
 
     // Method to extract job counts by partitions
-    private Map<String, Integer> extractJobCountsByPartitions(String filename) {
-        Map<String, Integer> jobCountsByPartitions = new HashMap<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                if (line.contains("Partition=")) {
-                    String partition = line.split("Partition=")[1].split(" ")[0];
-                    jobCountsByPartitions.put(partition, jobCountsByPartitions.getOrDefault(partition, 0) + 1);
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return jobCountsByPartitions;
-    }
-
-    // Method to extract errors by users
     private Map<String, Integer> extractErrorsByUsers(String filename) {
-        Map<String, Integer> errorsByUsers = new HashMap<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                if (line.contains("error:")) {
-                    String user = line.substring(line.indexOf("user='") + 6, line.indexOf("'", line.indexOf("user='") + 6));
+    Map<String, Integer> errorsByUsers = new HashMap<>();
+    try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+        String line;
+        while ((line = reader.readLine()) != null) {
+            if (line.contains("error:") && line.contains("user='")) {
+                int startIndex = line.indexOf("user='") + 6;
+                int endIndex = line.indexOf("'", startIndex);
+                if (startIndex >= 6 && endIndex > startIndex) {
+                    String user = line.substring(startIndex, endIndex);
                     errorsByUsers.put(user, errorsByUsers.getOrDefault(user, 0) + 1);
+                } else {
+                    System.err.println("Invalid user substring in line: " + line);
                 }
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-        return errorsByUsers;
+    } catch (IOException e) {
+        e.printStackTrace();
     }
+    return errorsByUsers;
+}
     
     
     
@@ -158,23 +147,6 @@ public class LogAnalyzerApp extends Application {
     }
 }
 
-//class JobData {
-//    private final String partition;
-//    private final int count;
-//
-//    public JobData(String partition, int count) {
-//        this.partition = partition;
-//        this.count = count;
-//    }
-//
-//    public String getPartition() {
-//        return partition;
-//    }
-//
-//    public int getCount() {
-//        return count;
-//    }
-//}
 
 
  class JobData {
