@@ -39,5 +39,11 @@ public class Main {
         errorAnalyzer.processLogFile(logFilename);
         System.out.println("Errors occurred by corresponding user:");
         errorAnalyzer.printErrorCounts();
+
+
+        //Part 4: Average Execution Time 
+
+        TimeAnalyzer tanalyzer = new TimeAnalyzer();
+        tanalyzer.averageExecutionTime();
     }
 }
