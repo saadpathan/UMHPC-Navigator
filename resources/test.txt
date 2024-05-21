@@ -1,0 +1,349 @@
+[2022-08-12T23:35:22.215] sched: Allocate JobId=47944 NodeList=cpu15 #CPUs=16 Partition=cpu-epyc
+[2022-08-13T06:17:03.579] _job_complete: JobId=47705 WEXITSTATUS 0
+[2022-08-13T06:17:03.584] _job_complete: JobId=47705 done
+[2022-08-13T06:35:03.358] _job_complete: JobId=47684 WEXITSTATUS 0
+[2022-08-13T06:35:03.359] _job_complete: JobId=47684 done
+[2022-08-13T06:35:03.733] sched: Allocate JobId=47688 NodeList=cpu15 #CPUs=32 Partition=cpu-epyc
+[2022-08-13T09:00:55.463] Requeuing JobId=47929
+[2022-08-13T11:20:09.543] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47929 uid 548200045
+[2022-08-13T11:21:39.385] _slurm_rpc_submit_batch_job: JobId=47945 InitPrio=1173 usec=594
+[2022-08-13T11:21:40.155] sched: Allocate JobId=47945 NodeList=gpu02 #CPUs=16 Partition=gpu-titan
+[2022-08-13T11:37:52.939] Requeuing JobId=47945
+[2022-08-13T12:34:46.145] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47945 uid 548200045
+[2022-08-13T12:34:50.902] _slurm_rpc_submit_batch_job: JobId=47946 InitPrio=1173 usec=486
+[2022-08-13T12:34:51.353] sched: Allocate JobId=47946 NodeList=gpu02 #CPUs=16 Partition=gpu-titan
+[2022-08-13T12:49:42.720] Requeuing JobId=47946
+[2022-08-13T12:59:41.590] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47946 uid 548200045
+[2022-08-13T13:00:08.545] _slurm_rpc_submit_batch_job: JobId=47947 InitPrio=1173 usec=423
+[2022-08-13T13:00:08.738] sched: Allocate JobId=47947 NodeList=gpu02 #CPUs=16 Partition=gpu-titan
+[2022-08-13T13:14:21.295] Requeuing JobId=47947
+[2022-08-13T13:14:35.531] acct_policy_update_pending_job: exceeded association/qos's cpu, node, memory or time limit for JobId=47947
+[2022-08-13T13:18:10.712] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47947 uid 548200045
+[2022-08-13T14:29:54.530] error: This association 43(account='free', user='han', partition='(null)') does not have access to qos long
+[2022-08-13T14:29:54.530] _slurm_rpc_submit_batch_job: Invalid qos specification
+[2022-08-13T14:30:08.478] error: This association 43(account='free', user='han', partition='(null)') does not have access to qos normal
+[2022-08-13T14:30:08.478] _slurm_rpc_submit_batch_job: Invalid qos specification
+[2022-08-13T14:30:14.749] error: This association 43(account='free', user='han', partition='(null)') does not have access to qos normal
+[2022-08-13T14:30:14.749] _slurm_rpc_submit_batch_job: Invalid qos specification
+[2022-08-13T14:30:27.231] _job_create: exceeded association/QOS limit for user 548200045: AssocGrpCpuLimit
+[2022-08-13T14:30:27.231] _slurm_rpc_submit_batch_job: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+[2022-08-13T14:35:05.787] _job_create: exceeded association/QOS limit for user 548200045: AssocGrpCpuLimit
+[2022-08-13T14:35:05.787] _slurm_rpc_submit_batch_job: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+[2022-08-13T14:43:23.105] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47668 uid 548200045
+[2022-08-13T14:43:25.387] sched: Allocate JobId=47664 NodeList=cpu13 #CPUs=32 Partition=cpu-epyc
+[2022-08-13T14:43:47.940] _job_create: exceeded association/QOS limit for user 548200045: AssocGrpCpuLimit
+[2022-08-13T14:43:47.940] _slurm_rpc_submit_batch_job: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+[2022-08-13T14:44:59.131] error: This association 43(account='free', user='han', partition='(null)') does not have access to qos long
+[2022-08-13T14:44:59.131] _slurm_rpc_submit_batch_job: Invalid qos specification
+[2022-08-13T14:45:50.046] _job_create: exceeded association/QOS limit for user 548200045: AssocGrpCpuLimit
+[2022-08-13T14:45:50.046] _slurm_rpc_submit_batch_job: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+[2022-08-13T15:00:37.189] _job_complete: JobId=47874 WEXITSTATUS 0
+[2022-08-13T15:00:37.189] _job_complete: JobId=47874 done
+[2022-08-13T15:02:42.340] _job_complete: JobId=47873 WEXITSTATUS 0
+[2022-08-13T15:02:42.340] _job_complete: JobId=47873 done
+[2022-08-13T15:27:52.764] _job_complete: JobId=47665 WEXITSTATUS 0
+[2022-08-13T15:27:52.765] _job_complete: JobId=47665 done
+[2022-08-13T15:27:55.758] sched: Allocate JobId=47671 NodeList=cpu14 #CPUs=32 Partition=cpu-epyc
+[2022-08-13T16:16:59.992] _job_complete: JobId=47523 WEXITSTATUS 1
+[2022-08-13T16:16:59.992] _job_complete: JobId=47523 done
+[2022-08-13T16:58:58.576] _slurm_rpc_submit_batch_job: JobId=47948 InitPrio=234 usec=409
+[2022-08-13T17:00:53.266] _slurm_rpc_submit_batch_job: JobId=47949 InitPrio=234 usec=586
+[2022-08-13T17:11:01.065] _job_create: exceeded association/QOS limit for user 548200045: AssocGrpCpuLimit
+[2022-08-13T17:11:01.065] _slurm_rpc_submit_batch_job: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+[2022-08-13T18:48:31.556] _slurm_rpc_submit_batch_job: JobId=47950 InitPrio=1408 usec=407
+[2022-08-13T18:48:32.393] sched: Allocate JobId=47950 NodeList=gpu04 #CPUs=16 Partition=gpu-k40c
+[2022-08-13T20:22:37.713] _job_complete: JobId=47688 WEXITSTATUS 0
+[2022-08-13T20:22:37.713] _job_complete: JobId=47688 done
+[2022-08-13T20:22:38.328] sched: Allocate JobId=47706 NodeList=cpu15 #CPUs=32 Partition=cpu-epyc
+[2022-08-14T00:11:22.508] Time limit exhausted for JobId=46922
+[2022-08-14T00:11:27.245] sched: Allocate JobId=47922 NodeList=cpu09 #CPUs=32 Partition=cpu-opteron
+[2022-08-14T00:12:12.011] _job_complete: JobId=47922 WEXITSTATUS 0
+[2022-08-14T00:12:12.012] _job_complete: JobId=47922 done
+[2022-08-14T00:12:14.231] sched: Allocate JobId=47923 NodeList=cpu09 #CPUs=32 Partition=cpu-opteron
+[2022-08-14T00:12:43.086] _job_complete: JobId=47923 WEXITSTATUS 0
+[2022-08-14T00:12:43.087] _job_complete: JobId=47923 done
+[2022-08-14T00:12:44.253] sched: Allocate JobId=47924 NodeList=cpu09 #CPUs=32 Partition=cpu-opteron
+[2022-08-14T00:13:13.951] _job_complete: JobId=47924 WEXITSTATUS 0
+[2022-08-14T00:13:13.951] _job_complete: JobId=47924 done
+[2022-08-14T00:13:15.132] sched: Allocate JobId=47925 NodeList=cpu09 #CPUs=32 Partition=cpu-opteron
+[2022-08-14T00:13:44.170] _job_complete: JobId=47925 WEXITSTATUS 0
+[2022-08-14T00:13:44.170] _job_complete: JobId=47925 done
+[2022-08-14T00:13:45.394] sched: Allocate JobId=47926 NodeList=cpu09 #CPUs=32 Partition=cpu-opteron
+[2022-08-14T00:14:13.807] _job_complete: JobId=47926 WEXITSTATUS 0
+[2022-08-14T00:14:13.807] _job_complete: JobId=47926 done
+[2022-08-14T00:14:15.018] sched: Allocate JobId=47927 NodeList=cpu09 #CPUs=32 Partition=cpu-opteron
+[2022-08-14T00:14:44.011] _job_complete: JobId=47927 WEXITSTATUS 0
+[2022-08-14T00:14:44.012] _job_complete: JobId=47927 done
+[2022-08-14T00:14:45.237] sched: Allocate JobId=47928 NodeList=cpu09 #CPUs=32 Partition=cpu-opteron
+[2022-08-14T00:15:14.829] _job_complete: JobId=47928 WEXITSTATUS 0
+[2022-08-14T00:15:14.830] _job_complete: JobId=47928 done
+[2022-08-14T00:15:16.089] sched: Allocate JobId=47880 NodeList=cpu09 #CPUs=32 Partition=cpu-opteron
+[2022-08-14T07:56:26.519] error: This association 43(account='free', user='han', partition='(null)') does not have access to qos normal
+[2022-08-14T07:56:26.519] _slurm_rpc_submit_batch_job: Invalid qos specification
+[2022-08-14T08:01:13.288] _job_create: exceeded association/QOS limit for user 548200045: AssocGrpCpuLimit
+[2022-08-14T08:01:13.288] _slurm_rpc_submit_batch_job: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+[2022-08-14T10:34:57.925] _job_complete: JobId=47706 WEXITSTATUS 0
+[2022-08-14T10:34:57.926] _job_complete: JobId=47706 done
+[2022-08-14T10:34:58.400] sched: Allocate JobId=47707 NodeList=cpu15 #CPUs=32 Partition=cpu-epyc
+[2022-08-14T14:24:21.865] _job_complete: JobId=47804 WEXITSTATUS 0
+[2022-08-14T14:24:21.870] _job_complete: JobId=47804 done
+[2022-08-14T18:48:54.525] Time limit exhausted for JobId=47950
+[2022-08-14T19:20:48.442] _slurm_rpc_submit_batch_job: JobId=47951 InitPrio=1408 usec=429
+[2022-08-14T19:20:48.729] sched: Allocate JobId=47951 NodeList=gpu04 #CPUs=16 Partition=gpu-k40c
+[2022-08-14T21:08:59.824] _job_complete: JobId=47944 WEXITSTATUS 1
+[2022-08-14T21:08:59.830] _job_complete: JobId=47944 done
+[2022-08-14T21:41:06.449] _slurm_rpc_submit_batch_job: JobId=47952 InitPrio=3990 usec=481
+[2022-08-15T00:17:33.812] _slurm_rpc_submit_batch_job: JobId=47953 InitPrio=11173 usec=562
+[2022-08-15T00:17:34.423] sched: Allocate JobId=47953 NodeList=gpu02 #CPUs=16 Partition=gpu-titan
+[2022-08-15T00:17:43.002] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47953 uid 548200045
+[2022-08-15T00:33:44.530] _job_complete: JobId=47866 WEXITSTATUS 0
+[2022-08-15T00:33:44.530] _job_complete: JobId=47866 done
+[2022-08-15T00:33:49.803] sched: Allocate JobId=47881 NodeList=cpu11 #CPUs=32 Partition=cpu-opteron
+[2022-08-15T01:17:14.219] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47952 uid 548300595
+[2022-08-15T01:17:45.039] _slurm_rpc_submit_batch_job: JobId=47954 InitPrio=3990 usec=440
+[2022-08-15T03:49:17.954] _job_complete: JobId=47707 WEXITSTATUS 0
+[2022-08-15T03:49:17.954] _job_complete: JobId=47707 done
+[2022-08-15T03:49:18.265] sched: Allocate JobId=47708 NodeList=cpu15 #CPUs=32 Partition=cpu-epyc
+[2022-08-15T05:13:41.846] _job_complete: JobId=46918 WEXITSTATUS 0
+[2022-08-15T05:13:41.851] _job_complete: JobId=46918 done
+[2022-08-15T05:13:43.768] sched: Allocate JobId=47709 NodeList=cpu12 #CPUs=32 Partition=cpu-epyc
+[2022-08-15T05:21:44.390] _job_complete: JobId=47861 WEXITSTATUS 0
+[2022-08-15T05:21:44.396] _job_complete: JobId=47861 done
+[2022-08-15T05:21:46.402] sched: Allocate JobId=47864 NodeList=gpu03 #CPUs=16 Partition=gpu-k10
+[2022-08-15T08:38:19.981] _slurm_rpc_submit_batch_job: JobId=47955 InitPrio=3990 usec=513
+[2022-08-15T08:38:31.724] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47955 uid 548300595
+[2022-08-15T08:39:17.056] error: Invalid qos (quick)
+[2022-08-15T08:39:17.056] _slurm_rpc_submit_batch_job: Invalid qos specification
+[2022-08-15T08:40:14.327] _slurm_rpc_submit_batch_job: JobId=47956 InitPrio=13990 usec=489
+[2022-08-15T08:40:14.381] sched: Allocate JobId=47956 NodeList=cpu[12-15] #CPUs=16 Partition=cpu-epyc
+[2022-08-15T08:44:25.260] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47954 uid 548300595
+[2022-08-15T09:09:03.600] _job_complete: JobId=47956 WEXITSTATUS 0
+[2022-08-15T09:09:03.601] _job_complete: JobId=47956 done
+[2022-08-15T09:56:08.678] _slurm_rpc_submit_batch_job: JobId=47957 InitPrio=13990 usec=461
+[2022-08-15T09:56:09.216] sched: Allocate JobId=47957 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-15T09:57:19.965] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47957 uid 548300595
+[2022-08-15T09:57:44.199] _slurm_rpc_submit_batch_job: JobId=47958 InitPrio=13990 usec=428
+[2022-08-15T09:57:44.410] sched: Allocate JobId=47958 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-15T10:28:55.074] sched: _slurm_rpc_allocate_resources JobId=47959 NodeList=(null) usec=826
+[2022-08-15T10:28:55.565] sched: Allocate JobId=47959 NodeList=cpu08 #CPUs=16 Partition=cpu-opteron
+[2022-08-15T10:30:27.588] _job_complete: JobId=47958 WEXITSTATUS 0
+[2022-08-15T10:30:27.589] _job_complete: JobId=47958 done
+[2022-08-15T10:44:07.533] _slurm_rpc_submit_batch_job: JobId=47960 InitPrio=15868 usec=497
+[2022-08-15T10:44:08.333] sched: Allocate JobId=47960 NodeList=gpu02 #CPUs=15 Partition=gpu-titan
+[2022-08-15T10:44:36.307] _slurm_rpc_submit_batch_job: JobId=47961 InitPrio=15868 usec=463
+[2022-08-15T10:45:04.092] _slurm_rpc_submit_batch_job: JobId=47962 InitPrio=15868 usec=472
+[2022-08-15T10:45:37.980] _slurm_rpc_submit_batch_job: JobId=47963 InitPrio=15868 usec=426
+[2022-08-15T10:46:03.653] _slurm_rpc_submit_batch_job: JobId=47964 InitPrio=15868 usec=388
+[2022-08-15T10:46:24.461] _slurm_rpc_submit_batch_job: JobId=47965 InitPrio=15868 usec=388
+[2022-08-15T10:51:10.669] _job_complete: JobId=47960 WEXITSTATUS 0
+[2022-08-15T10:51:10.669] _job_complete: JobId=47960 done
+[2022-08-15T10:51:11.217] sched: Allocate JobId=47961 NodeList=gpu02 #CPUs=8 Partition=gpu-titan
+[2022-08-15T10:51:11.218] sched: Allocate JobId=47962 NodeList=gpu02 #CPUs=8 Partition=gpu-titan
+[2022-08-15T10:55:24.546] _job_complete: JobId=47961 WEXITSTATUS 0
+[2022-08-15T10:55:24.546] _job_complete: JobId=47961 done
+[2022-08-15T10:55:25.221] sched: Allocate JobId=47963 NodeList=gpu02 #CPUs=8 Partition=gpu-titan
+[2022-08-15T10:58:52.647] _job_complete: JobId=47962 WEXITSTATUS 0
+[2022-08-15T10:58:52.648] _job_complete: JobId=47962 done
+[2022-08-15T11:02:19.590] _job_complete: JobId=47963 WEXITSTATUS 0
+[2022-08-15T11:02:19.590] _job_complete: JobId=47963 done
+[2022-08-15T11:02:20.658] sched: Allocate JobId=47964 NodeList=gpu02 #CPUs=8 Partition=gpu-titan
+[2022-08-15T11:02:20.658] sched: Allocate JobId=47965 NodeList=gpu02 #CPUs=8 Partition=gpu-titan
+[2022-08-15T11:05:15.938] _job_complete: JobId=47965 WEXITSTATUS 0
+[2022-08-15T11:05:15.938] _job_complete: JobId=47965 done
+[2022-08-15T11:09:44.655] _job_complete: JobId=47964 WEXITSTATUS 0
+[2022-08-15T11:09:44.655] _job_complete: JobId=47964 done
+[2022-08-15T12:15:07.885] _slurm_rpc_submit_batch_job: JobId=47966 InitPrio=234 usec=476
+[2022-08-15T12:40:24.778] _slurm_rpc_submit_batch_job: JobId=47967 InitPrio=15633 usec=476
+[2022-08-15T12:40:25.175] sched: Allocate JobId=47967 NodeList=gpu02 #CPUs=15 Partition=gpu-titan
+[2022-08-15T12:40:47.168] _slurm_rpc_submit_batch_job: JobId=47968 InitPrio=15633 usec=395
+[2022-08-15T12:41:07.281] _slurm_rpc_submit_batch_job: JobId=47969 InitPrio=15633 usec=467
+[2022-08-15T12:41:28.210] _slurm_rpc_submit_batch_job: JobId=47970 InitPrio=15633 usec=442
+[2022-08-15T12:41:53.010] _slurm_rpc_submit_batch_job: JobId=47971 InitPrio=15633 usec=449
+[2022-08-15T12:42:20.922] _slurm_rpc_submit_batch_job: JobId=47972 InitPrio=15633 usec=467
+[2022-08-15T12:47:05.420] _job_complete: JobId=47967 WEXITSTATUS 0
+[2022-08-15T12:47:05.421] _job_complete: JobId=47967 done
+[2022-08-15T12:47:05.969] sched: Allocate JobId=47968 NodeList=gpu02 #CPUs=8 Partition=gpu-titan
+[2022-08-15T12:47:05.970] sched: Allocate JobId=47969 NodeList=gpu02 #CPUs=8 Partition=gpu-titan
+[2022-08-15T12:47:17.397] _slurm_rpc_submit_batch_job: JobId=47973 InitPrio=7276 usec=437
+[2022-08-15T12:48:03.081] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47973 uid 548300580
+[2022-08-15T12:49:07.925] _build_node_list: No nodes satisfy JobId=47974 requirements in partition gpu-k40c
+[2022-08-15T12:49:07.925] _slurm_rpc_submit_batch_job: Requested node configuration is not available
+[2022-08-15T12:49:47.245] _slurm_rpc_submit_batch_job: JobId=47975 InitPrio=7276 usec=747
+[2022-08-15T12:50:33.221] _job_complete: JobId=47968 WEXITSTATUS 0
+[2022-08-15T12:50:33.221] _job_complete: JobId=47968 done
+[2022-08-15T12:50:33.801] sched: Allocate JobId=47970 NodeList=gpu02 #CPUs=8 Partition=gpu-titan
+[2022-08-15T12:53:07.172] _job_complete: JobId=47969 WEXITSTATUS 0
+[2022-08-15T12:53:07.173] _job_complete: JobId=47969 done
+[2022-08-15T12:59:07.405] _job_complete: JobId=47970 WEXITSTATUS 0
+[2022-08-15T12:59:07.405] _job_complete: JobId=47970 done
+[2022-08-15T12:59:08.485] sched: Allocate JobId=47971 NodeList=gpu02 #CPUs=8 Partition=gpu-titan
+[2022-08-15T12:59:08.485] sched: Allocate JobId=47972 NodeList=gpu02 #CPUs=8 Partition=gpu-titan
+[2022-08-15T13:01:37.754] _job_complete: JobId=47972 WEXITSTATUS 0
+[2022-08-15T13:01:37.754] _job_complete: JobId=47972 done
+[2022-08-15T13:05:54.130] _job_complete: JobId=47971 WEXITSTATUS 0
+[2022-08-15T13:05:54.130] _job_complete: JobId=47971 done
+[2022-08-15T13:06:53.627] _slurm_rpc_submit_batch_job: JobId=47976 InitPrio=4929 usec=371
+[2022-08-15T13:07:03.715] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47976 uid 548200003
+[2022-08-15T13:07:08.331] _slurm_rpc_submit_batch_job: JobId=47977 InitPrio=14929 usec=357
+[2022-08-15T13:07:08.866] sched: Allocate JobId=47977 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-15T13:08:59.276] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47977 uid 548200003
+[2022-08-15T13:42:54.840] _pick_best_nodes: JobId=47978 never runnable in partition cpu-opteron
+[2022-08-15T13:42:54.840] _slurm_rpc_submit_batch_job: Requested node configuration is not available
+[2022-08-15T13:43:01.595] _slurm_rpc_submit_batch_job: JobId=47979 InitPrio=15399 usec=422
+[2022-08-15T13:43:01.716] sched: Allocate JobId=47979 NodeList=cpu[09-10] #CPUs=8 Partition=cpu-opteron
+[2022-08-15T14:03:23.630] _slurm_rpc_submit_batch_job: JobId=47980 InitPrio=15399 usec=329
+[2022-08-15T14:03:23.769] sched: Allocate JobId=47980 NodeList=cpu[12-13] #CPUs=32 Partition=cpu-epyc
+[2022-08-15T14:09:10.207] _job_complete: JobId=47980 WEXITSTATUS 0
+[2022-08-15T14:09:10.208] _job_complete: JobId=47980 done
+[2022-08-15T14:12:01.175] _slurm_rpc_submit_batch_job: JobId=47981 InitPrio=15399 usec=377
+[2022-08-15T14:12:01.652] sched: Allocate JobId=47981 NodeList=cpu[12-13] #CPUs=32 Partition=cpu-epyc
+[2022-08-15T14:13:35.515] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47979 uid 548300543
+[2022-08-15T14:19:05.983] _job_complete: JobId=47981 WEXITSTATUS 0
+[2022-08-15T14:19:05.984] _job_complete: JobId=47981 done
+[2022-08-15T14:58:15.324] _slurm_rpc_submit_batch_job: JobId=47982 InitPrio=13990 usec=416
+[2022-08-15T14:58:15.525] sched: Allocate JobId=47982 NodeList=cpu01 #CPUs=16 Partition=cpu-opteron
+[2022-08-15T15:00:35.402] _slurm_rpc_submit_batch_job: JobId=47983 InitPrio=13990 usec=367
+[2022-08-15T15:00:35.707] sched: Allocate JobId=47983 NodeList=cpu[01,09-11] #CPUs=16 Partition=cpu-opteron
+[2022-08-15T15:11:44.981] _pick_best_nodes: JobId=47984 never runnable in partition cpu-epyc
+[2022-08-15T15:11:44.982] _slurm_rpc_submit_batch_job: Requested node configuration is not available
+[2022-08-15T15:11:59.714] _slurm_rpc_submit_batch_job: JobId=47985 InitPrio=4929 usec=357
+[2022-08-15T15:12:17.351] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47985 uid 548200003
+[2022-08-15T15:12:30.427] _slurm_rpc_submit_batch_job: JobId=47986 InitPrio=14929 usec=446
+[2022-08-15T15:12:30.872] sched: Allocate JobId=47986 NodeList=cpu[12-15] #CPUs=64 Partition=cpu-epyc
+[2022-08-15T15:13:31.611] _job_complete: JobId=47986 WEXITSTATUS 0
+[2022-08-15T15:13:31.612] _job_complete: JobId=47986 done
+[2022-08-15T15:22:06.848] _slurm_rpc_submit_batch_job: JobId=47987 InitPrio=15399 usec=397
+[2022-08-15T15:22:06.872] sched: Allocate JobId=47987 NodeList=cpu[12-13] #CPUs=32 Partition=cpu-epyc
+[2022-08-15T15:30:16.699] _job_complete: JobId=47987 WEXITSTATUS 0
+[2022-08-15T15:30:16.700] _job_complete: JobId=47987 done
+[2022-08-15T15:32:51.633] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47959 uid 548300543
+[2022-08-15T15:38:40.619] _slurm_rpc_submit_batch_job: JobId=47988 InitPrio=5399 usec=440
+[2022-08-15T15:39:03.959] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47988 uid 548300543
+[2022-08-15T15:39:54.059] _slurm_rpc_submit_batch_job: JobId=47989 InitPrio=5399 usec=471
+[2022-08-15T15:39:54.754] sched: Allocate JobId=47989 NodeList=cpu08 #CPUs=16 Partition=cpu-opteron
+[2022-08-15T15:53:07.967] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47989 uid 548300543
+[2022-08-15T15:54:51.660] _slurm_rpc_submit_batch_job: JobId=47990 InitPrio=15399 usec=582
+[2022-08-15T15:54:52.231] sched: Allocate JobId=47990 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-15T15:58:27.600] Time limit exhausted for JobId=47982
+[2022-08-15T16:00:57.808] Time limit exhausted for JobId=47983
+[2022-08-15T16:02:25.079] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47990 uid 548300543
+[2022-08-15T16:03:31.268] _slurm_rpc_submit_batch_job: JobId=47991 InitPrio=15399 usec=401
+[2022-08-15T16:03:32.128] sched: Allocate JobId=47991 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-15T16:04:39.962] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47991 uid 548300543
+[2022-08-15T16:05:21.534] _slurm_rpc_submit_batch_job: JobId=47992 InitPrio=15399 usec=551
+[2022-08-15T16:05:22.282] sched: Allocate JobId=47992 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-15T16:07:26.118] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=47992 uid 548300543
+[2022-08-15T16:09:11.796] _job_complete: JobId=47708 WEXITSTATUS 0
+[2022-08-15T16:09:11.796] _job_complete: JobId=47708 done
+[2022-08-15T16:09:12.059] sched: Allocate JobId=47710 NodeList=cpu15 #CPUs=32 Partition=cpu-epyc
+[2022-08-15T16:10:16.327] _slurm_rpc_submit_batch_job: JobId=47993 InitPrio=3990 usec=381
+[2022-08-15T16:10:16.783] sched: Allocate JobId=47993 NodeList=cpu[08-11] #CPUs=16 Partition=cpu-opteron
+[2022-08-15T16:11:11.223] _slurm_rpc_submit_batch_job: JobId=47994 InitPrio=3990 usec=633
+[2022-08-15T16:11:11.853] sched: Allocate JobId=47994 NodeList=cpu01 #CPUs=16 Partition=cpu-opteron
+[2022-08-15T16:12:31.559] _slurm_rpc_submit_batch_job: JobId=47995 InitPrio=15399 usec=484
+[2022-08-15T16:12:31.965] sched: Allocate JobId=47995 NodeList=cpu[12-13] #CPUs=32 Partition=cpu-epyc
+[2022-08-15T16:13:33.856] _slurm_rpc_submit_batch_job: JobId=47996 InitPrio=15399 usec=389
+[2022-08-15T16:13:34.149] sched: Allocate JobId=47996 NodeList=cpu14 #CPUs=16 Partition=cpu-epyc
+[2022-08-15T16:22:14.167] _job_complete: JobId=47995 WEXITSTATUS 0
+[2022-08-15T16:22:14.168] _job_complete: JobId=47995 done
+[2022-08-15T16:38:17.507] _job_complete: JobId=47996 WEXITSTATUS 1
+[2022-08-15T16:38:17.507] _job_complete: JobId=47996 done
+[2022-08-15T16:43:23.795] _slurm_rpc_submit_batch_job: JobId=47997 InitPrio=15399 usec=406
+[2022-08-15T16:43:24.195] sched: Allocate JobId=47997 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-15T16:43:37.964] _job_complete: JobId=47997 WEXITSTATUS 1
+[2022-08-15T16:43:37.965] _job_complete: JobId=47997 done
+[2022-08-15T16:44:21.297] _slurm_rpc_submit_batch_job: JobId=47998 InitPrio=15399 usec=540
+[2022-08-15T16:44:22.274] sched: Allocate JobId=47998 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-15T16:44:33.131] _job_complete: JobId=47998 WEXITSTATUS 1
+[2022-08-15T16:44:33.131] _job_complete: JobId=47998 done
+[2022-08-15T16:55:59.479] _slurm_rpc_submit_batch_job: JobId=47999 InitPrio=15399 usec=526
+[2022-08-15T16:56:00.438] sched: Allocate JobId=47999 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-15T16:56:12.202] _job_complete: JobId=47999 WEXITSTATUS 1
+[2022-08-15T16:56:12.202] _job_complete: JobId=47999 done
+[2022-08-15T19:02:09.463] _job_complete: JobId=47993 WEXITSTATUS 0
+[2022-08-15T19:02:09.468] _job_complete: JobId=47993 done
+[2022-08-15T19:10:45.886] _job_complete: JobId=47994 WEXITSTATUS 0
+[2022-08-15T19:10:45.886] _job_complete: JobId=47994 done
+[2022-08-15T20:20:20.087] _job_complete: JobId=47709 WEXITSTATUS 0
+[2022-08-15T20:20:20.087] _job_complete: JobId=47709 done
+[2022-08-15T20:20:20.406] sched: Allocate JobId=47711 NodeList=cpu12 #CPUs=32 Partition=cpu-epyc
+[2022-08-15T20:23:53.960] _slurm_rpc_submit_batch_job: JobId=48000 InitPrio=3990 usec=405
+[2022-08-15T20:59:36.621] _slurm_rpc_submit_batch_job: JobId=48001 InitPrio=2816 usec=917
+[2022-08-15T20:59:37.608] sched: Allocate JobId=48001 NodeList=gpu01 #CPUs=16 Partition=gpu-k10
+[2022-08-15T21:00:26.273] _slurm_rpc_submit_batch_job: JobId=48002 InitPrio=2816 usec=716
+[2022-08-15T22:44:16.139] _slurm_rpc_submit_batch_job: JobId=48003 InitPrio=704 usec=504
+[2022-08-15T22:55:38.894] _slurm_rpc_submit_batch_job: JobId=48004 InitPrio=2112 usec=425
+[2022-08-15T23:42:28.726] _slurm_rpc_submit_batch_job: JobId=48005 InitPrio=11173 usec=420
+[2022-08-15T23:42:29.377] sched/backfill: _start_job: Started JobId=48005 in gpu-titan on gpu02
+[2022-08-15T23:44:35.856] sched: _slurm_rpc_allocate_resources JobId=48006 NodeList=cpu01 usec=84586
+[2022-08-15T23:45:24.343] _job_complete: JobId=48006 WEXITSTATUS 0
+[2022-08-15T23:45:24.344] _job_complete: JobId=48006 done
+[2022-08-15T23:52:18.083] error: This association 222(account='free', user='fairus', partition='(null)') does not have access to qos normal
+[2022-08-15T23:52:18.083] _slurm_rpc_submit_batch_job: Invalid qos specification
+[2022-08-15T23:53:52.873] error: This association 222(account='free', user='fairus', partition='(null)') does not have access to qos normal
+[2022-08-15T23:53:52.873] _slurm_rpc_submit_batch_job: Invalid qos specification
+[2022-08-15T23:54:08.508] error: This association 222(account='free', user='fairus', partition='(null)') does not have access to qos normal
+[2022-08-15T23:54:08.508] _slurm_rpc_submit_batch_job: Invalid qos specification
+[2022-08-15T23:54:46.374] error: This association 222(account='free', user='fairus', partition='(null)') does not have access to qos normal
+[2022-08-15T23:54:46.374] _slurm_rpc_submit_batch_job: Invalid qos specification
+[2022-08-15T23:55:12.281] _slurm_rpc_submit_batch_job: JobId=48007 InitPrio=21267 usec=514
+[2022-08-15T23:55:12.934] sched: Allocate JobId=48007 NodeList=cpu01 #CPUs=1 Partition=cpu-opteron
+[2022-08-15T23:55:15.041] _job_complete: JobId=48007 WEXITSTATUS 127
+[2022-08-15T23:55:15.041] _job_complete: JobId=48007 done
+[2022-08-16T00:42:29.108] Time limit exhausted for JobId=48005
+[2022-08-16T00:48:03.531] _slurm_rpc_submit_batch_job: JobId=48008 InitPrio=1173 usec=608
+[2022-08-16T00:48:03.770] sched: Allocate JobId=48008 NodeList=gpu02 #CPUs=16 Partition=gpu-titan
+[2022-08-16T06:19:10.769] _job_complete: JobId=47710 WEXITSTATUS 0
+[2022-08-16T06:19:10.769] _job_complete: JobId=47710 done
+[2022-08-16T06:19:11.078] sched: Allocate JobId=47712 NodeList=cpu15 #CPUs=32 Partition=cpu-epyc
+[2022-08-16T07:48:34.538] _job_complete: JobId=47711 WEXITSTATUS 0
+[2022-08-16T07:48:34.538] _job_complete: JobId=47711 done
+[2022-08-16T07:48:34.869] sched: Allocate JobId=47719 NodeList=cpu12 #CPUs=48 Partition=cpu-epyc
+[2022-08-16T07:49:19.410] _job_complete: JobId=47719 WEXITSTATUS 1
+[2022-08-16T07:49:19.410] _job_complete: JobId=47719 done
+[2022-08-16T07:49:19.773] sched: Allocate JobId=47949 NodeList=cpu12 #CPUs=32 Partition=cpu-epyc
+[2022-08-16T08:02:06.281] _job_complete: JobId=47801 WEXITSTATUS 0
+[2022-08-16T08:02:06.282] _job_complete: JobId=47801 done
+[2022-08-16T08:02:13.510] sched: Allocate JobId=48000 NodeList=cpu08 #CPUs=64 Partition=cpu-opteron
+[2022-08-16T08:02:25.003] _job_complete: JobId=48000 OOM failure
+[2022-08-16T08:02:25.004] _job_complete: JobId=48000 done
+[2022-08-16T08:02:25.644] sched: Allocate JobId=47948 NodeList=cpu08 #CPUs=64 Partition=cpu-opteron
+[2022-08-16T08:43:59.225] Requeuing JobId=48008
+[2022-08-16T08:44:08.825] acct_policy_update_pending_job: exceeded association/qos's cpu, node, memory or time limit for JobId=48008
+[2022-08-16T08:49:25.790] _slurm_rpc_submit_batch_job: JobId=48009 InitPrio=15399 usec=436
+[2022-08-16T08:49:26.193] sched: Allocate JobId=48009 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-16T08:49:40.255] _job_complete: JobId=48009 WEXITSTATUS 1
+[2022-08-16T08:49:40.256] _job_complete: JobId=48009 done
+[2022-08-16T08:55:47.582] _slurm_rpc_submit_batch_job: JobId=48010 InitPrio=15399 usec=434
+[2022-08-16T08:55:47.900] sched: Allocate JobId=48010 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-16T08:56:00.494] _job_complete: JobId=48010 WEXITSTATUS 1
+[2022-08-16T08:56:00.495] _job_complete: JobId=48010 done
+[2022-08-16T09:06:56.554] sched: _slurm_rpc_allocate_resources JobId=48011 NodeList=(null) usec=808
+[2022-08-16T09:06:57.111] sched: Allocate JobId=48011 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-16T09:10:30.815] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=48011 uid 548300543
+[2022-08-16T09:18:22.596] _slurm_rpc_submit_batch_job: JobId=48012 InitPrio=3990 usec=464
+[2022-08-16T09:33:40.884] sched: _slurm_rpc_allocate_resources JobId=48013 NodeList=(null) usec=844
+[2022-08-16T09:33:41.019] sched: Allocate JobId=48013 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-16T09:36:47.410] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=48008 uid 548200045
+[2022-08-16T09:41:05.826] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=48013 uid 548300543
+[2022-08-16T09:45:48.379] _slurm_rpc_submit_batch_job: JobId=48014 InitPrio=15399 usec=466
+[2022-08-16T09:45:49.235] sched: Allocate JobId=48014 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-16T09:46:00.833] _job_complete: JobId=48014 WEXITSTATUS 1
+[2022-08-16T09:46:00.833] _job_complete: JobId=48014 done
+[2022-08-16T09:49:31.699] sched: _slurm_rpc_allocate_resources JobId=48015 NodeList=(null) usec=872
+[2022-08-16T09:49:32.681] sched: Allocate JobId=48015 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-16T10:20:17.667] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=48015 uid 548300543
+[2022-08-16T10:30:03.993] _slurm_rpc_submit_batch_job: JobId=48016 InitPrio=15399 usec=495
+[2022-08-16T10:30:04.829] sched: Allocate JobId=48016 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-16T10:51:53.804] _job_complete: JobId=48016 WEXITSTATUS 1
+[2022-08-16T10:51:53.804] _job_complete: JobId=48016 done
+[2022-08-16T10:58:24.950] _slurm_rpc_submit_batch_job: JobId=48017 InitPrio=15399 usec=529
+[2022-08-16T10:58:25.879] sched: Allocate JobId=48017 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-16T11:32:41.759] _job_complete: JobId=48017 WEXITSTATUS 1
+[2022-08-16T11:32:41.760] _job_complete: JobId=48017 done
+[2022-08-16T12:19:40.286] _slurm_rpc_submit_batch_job: JobId=48018 InitPrio=15399 usec=484
+[2022-08-16T12:19:40.337] sched: Allocate JobId=48018 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-16T12:21:21.667] _slurm_rpc_kill_job: REQUEST_KILL_JOB JobId=48018 uid 548300543
+[2022-08-16T12:22:18.839] _slurm_rpc_submit_batch_job: JobId=48019 InitPrio=15399 usec=457
+[2022-08-16T12:22:19.535] sched: Allocate JobId=48019 NodeList=cpu12 #CPUs=16 Partition=cpu-epyc
+[2022-08-16T12:22:20.518] _job_complete: JobId=48019 WEXITSTATUS 1
