@@ -1,6 +1,6 @@
 # UMHPC Navigator
 
-Welcome to the UMHPC Navigator GitHub repository! This project is designed to analyze and visualize job execution data on a High-Performance Computing (HPC) cluster, specifically tailored for the University of Management and High-Performance Computing (UMHPC). The UMHPC Navigator is a Java application that offers various analytical tools to assist researchers and system administrators in monitoring and optimizing the performance of their HPC resources.
+Welcome to the UMHPC Navigator GitHub repository! UMHPC Navigator is an application to extract and analyze log file information containing records of job submissions, allocations, completions, and terminations on a HPC system, which is associated with SLURM management software in UMHPC. It is developed under the course WIX1002 - Fundamentals of Programming, as a semester assignment project. This project is designed to analyze and visualize job execution data on a High-Performance Computing (HPC) cluster, specifically tailored for the Data-Intensive Computing Centre in University of Malaya. The UMHPC Navigator is a Java application that offers various analytical tools to assist system administrators in monitoring and optimizing the performance of their HPC resources.
 
 ## Features
 
@@ -24,7 +24,7 @@ Welcome to the UMHPC Navigator GitHub repository! This project is designed to an
    - Perform a detailed analysis of the log file to provide additional statistical insights.
 
 7. **Exit**:
-   - Exit the application and display team details.
+   - Exit the application.
 
 ### Additional Functionalities
 - **Job Analysis**:
@@ -70,12 +70,3 @@ Welcome to the UMHPC Navigator GitHub repository! This project is designed to an
 ## Contributing
 We welcome contributions from the community. If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request. Make sure to follow our contributing guidelines.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-We extend our gratitude to the University of Malaya and DICC for providing the resources and support needed to develop this application. Special thanks to our team for their dedication and hard work.
-
----
-
-This repository serves as a comprehensive tool for HPC job analysis, helping users to efficiently monitor and manage their HPC resources. We hope you find UMHPC Navigator useful and look forward to your feedback!
