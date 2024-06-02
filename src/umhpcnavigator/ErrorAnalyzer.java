@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package erroranalyzer;
+package umhpcnavigator;
 
-/**
- *
- * @author nfasi
+/*
+ * @author Nur Fasihah Binti Mohd Ali - 22001940
  */
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -15,28 +11,22 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ErrorAnalyzer {
-    public static void main(String[] args) {
-
-        System.out.println("Errors occured by corresponding user: \n");
-        String logFilename = "C:\\Users\\nfasi\\OneDrive\\Documents\\extracted_log.txt";
-        ErrorAnalyzer logProcessor = new ErrorAnalyzer();
-
-        logProcessor.processLogFile(logFilename);
-        logProcessor.printErrorCounts();
-    }
 
     private Map<String, Integer> userErrorCount;
+    private int totalErrors;
 
     public ErrorAnalyzer() {
         userErrorCount = new HashMap<>();
+        totalErrors = 0;
     }
 
     public void processLogFile(String filename) {
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                if (line.contains("error:")) {
+                if (line.contains("error: This association")) {
                     updateUserErrorCount(line);
+                    totalErrors++;
                 }
             }
         } catch (IOException e) {
@@ -56,10 +46,10 @@ public class ErrorAnalyzer {
                 String user = logEntry.substring(start, end);
                 userErrorCount.put(user, userErrorCount.getOrDefault(user, 0) + 1);
             } else {
-                //System.out.println("End index not found for user in log entry: " + logEntry);
+                System.out.println("");
             }
         } else {
-            //System.out.println("User prefix not found in log entry: " + logEntry);
+            System.out.println("");
         }
     }
 
@@ -67,9 +57,8 @@ public class ErrorAnalyzer {
         for (String user : userErrorCount.keySet()) {
             System.out.println("[user-" + user + ", error-occurred " + userErrorCount.get(user) + "]");
         }
+
+        System.out.println("\nTotal Jobs Causing Errors : " + totalErrors);
+        System.out.println("Total Users With Errors : " + userErrorCount.size());
     }
 }
-
-    
-    
-
