@@ -1,5 +1,4 @@
-
-package ass5;
+package umhpcnavigator;
 
 /*
  * @author Nurain Fatihah Binti Azrai - 22002298
