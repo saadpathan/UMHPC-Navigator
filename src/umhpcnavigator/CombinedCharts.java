@@ -85,7 +85,7 @@ public class CombinedCharts extends Application {
 
         Scene scene = new Scene(vBox, 800, 500);
         stage.setScene(scene);
-        stage.setTitle("Bar Chart 01");
+        stage.setTitle("Overall Data");
         stage.show();
     }
 
@@ -120,7 +120,7 @@ public class CombinedCharts extends Application {
 
         Scene scene = new Scene(vBox, 800, 500);
         stage.setScene(scene);
-        stage.setTitle("Pie Chart 01");
+        stage.setTitle("Partition Data");
         stage.show();
     }
 
@@ -167,7 +167,7 @@ public class CombinedCharts extends Application {
         backButton.setAlignment(Pos.CENTER);
         Scene scene = new Scene(vBox, 800, 500);
         stage.setScene(scene);
-        stage.setTitle("Pie Chart 02");
+        stage.setTitle("User Error Data");
         stage.show();
     }
 
@@ -209,9 +209,8 @@ public class CombinedCharts extends Application {
 
         Scene scene = new Scene(vBox, 800, 500);
         stage.setScene(scene);
-        stage.setTitle("Bar Chart 02");
+        stage.setTitle("Additional Data");
         stage.show();
     }    
 
 }
-
