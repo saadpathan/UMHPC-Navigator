@@ -1,4 +1,7 @@
 package umhpcnavigator;
+/*
+ *@author Bushra Binti Ismail - 22002586
+ */
 
 public class gpuv100sCounter extends PartitionAnalyzer{
     @Override
